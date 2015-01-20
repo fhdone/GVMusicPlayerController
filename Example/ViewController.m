@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *songLabel;
 @property (weak, nonatomic) IBOutlet UILabel *artistLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *songImageView;
 @property (weak, nonatomic) IBOutlet UIButton *playPauseButton;
 @property (weak, nonatomic) IBOutlet UISlider *progressSlider;
 @property (weak, nonatomic) IBOutlet UISlider *volumeSlider;
@@ -226,7 +227,11 @@
     // Artwork
     MPMediaItemArtwork *artwork = [nowPlayingItem valueForProperty:MPMediaItemPropertyArtwork];
     if (artwork != nil) {
-        self.imageView.image = [artwork imageWithSize:self.imageView.frame.size];
+//        self.imageView.image = [artwork imageWithSize:self.imageView.frame.size];
+        self.songImageView.image = [artwork imageWithSize:self.songImageView.frame.size];
+    }
+    else{
+        self.songImageView.image = [UIImage imageNamed:@"Icon@2x.png"];
     }
 
     NSLog(@"Proof that this code is being called, even in the background!");

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" promptedForUpgradeToXcode5="NO" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+        <deployment identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -12,6 +14,10 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DPg-yc-lbX" userLabel="SongImage">
+                                <rect key="frame" x="0.0" y="107" width="320" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="Xqs-3f-soU">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,6 +234,7 @@
                         <outlet property="progressSlider" destination="Eh7-Yz-mpU" id="TJf-NI-ngP"/>
                         <outlet property="repeatButton" destination="RzX-DU-HB5" id="FRx-Xm-e2C"/>
                         <outlet property="shuffleButton" destination="PYZ-fG-25K" id="oAj-ph-gTM"/>
+                        <outlet property="songImageView" destination="DPg-yc-lbX" id="QdN-wj-Oxc"/>
                         <outlet property="songLabel" destination="vbc-lT-Avt" id="KiG-r0-g71"/>
                         <outlet property="trackCurrentPlaybackTimeLabel" destination="Uam-M6-sVH" id="FtE-Je-p3s"/>
                         <outlet property="trackLengthLabel" destination="dK5-HV-AJG" id="y2O-Ff-Bx5"/>
